@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shosho.myapplication.MainActivity">
+    --first radio quistion
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="12dp"/>
+    --first Q
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/q1"
+        tools:text="Q 1 - What is Android?"
+        android:textStyle="bold|italic"
+        android:textColor="?android:attr/colorForeground"
+        android:text="Q 1 - What is Android?" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:id="@+id/group1">
+        <RadioButton
+            android:text="A - Google mobile device name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ans1"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="B - Android is a stack of software's for mobility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ans2"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="C - None of the above "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ans3"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    --second Q
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/q2"
+        android:layout_weight="1"
+        tools:text="Q 2 -What are the functionalities of Binder services in android?"
+        android:paddingTop="10dp"
+        android:textColor="?android:attr/colorForeground"
+        android:textStyle="bold|italic"
+        android:text="Q 2 -What are the functionalities of Binder services in android?" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:id="@+id/group2">
+        <RadioButton
+            android:text="A - Binder is responsible to manage the thread while using aidl in android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/an1" android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:layout_weight="1" />
+        <RadioButton
+            android:text="B - Binder is responsible for marshalling and un-marshalling of the data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/an2" android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="C - A and B "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/an3" android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="10dp"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    --CheckBox Q
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/q3"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:textColor="?android:attr/colorForeground"
+        android:textStyle="bold|italic"
+        android:text="Q 3 -Select An Android flavors" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Honeycomb " android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:id="@+id/CHans1"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cupcake"
+        android:id="@+id/CHans2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"/>
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pizza" android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:id="@+id/CHans3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/q4"
+            android:paddingTop="10dp"
+            android:textColor="?android:attr/colorForeground"
+            android:textStyle="bold|italic"
+            android:text="Q 4 - 1 + 1 =" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/edit_ans"
+            android:hint='answer here'
+            />
+    </LinearLayout>
+
+    -- Grade Button
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Results!"
+        android:id="@+id/Result"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
+
+</ScrollView>
